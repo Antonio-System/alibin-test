@@ -11,61 +11,74 @@ technical test
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## About Alibin test by Pedro Vargas
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Breve descrição do seu projeto.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Instruções para Iniciar com Docker Compose
 
-## Learning Laravel
+Siga esses passos para configurar e executar seu projeto localmente utilizando o Docker Compose:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. Clone o repositório:
+    
+``` bash
+$  git clone <URL do repositório>
+```
+ 
+  
+2. Navegue até o diretório do projeto:
+``` bash
+$  cd nome-do-projeto
+```
+3. Copie o arquivo de configuração .env.example e crie um arquivo .env:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+``` bash
+$  cp .env.example .env
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+5. Execute o Docker Compose para construir e iniciar os contêineres:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+``` bash
+$  docker-compose up --build
+``` 
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## Documentação da API
+## Rotas da API
 
-## Contributing
+ ### URL_BASE: http://localhost:8000
+### 1. Obter Links de Pagamento
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- **Método:** GET
+- **URL:** `/api/link`
+- **Parâmetros de consulta:**
+  - `nuLink` (opcional): Número do link de pagamento.
+  - `page` (opcional): Página de resultados.
+  - `perPage` (opcional): Resultados por página.
+- **Descrição:** Essa rota permite obter uma lista de links de pagamento de acordo com os parâmetros fornecidos.
 
-## Code of Conduct
+### 2. Criar Novo Link de Pagamento
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- **Método:** POST
+- **URL:** `/api/link`
+- **Corpo da solicitação:** Consulte o código fornecido para ver os parâmetros necessários.
+- **Descrição:** Permite criar um novo link de pagamento com os dados fornecidos.
 
-## Security Vulnerabilities
+### 3. Excluir Link de Pagamento
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- **Método:** DELETE
+- **URL:** `/api/link/{linkId}`
+- **Parâmetros de rota:**
+  - `linkId`: ID do link de pagamento a ser excluído.
+- **Descrição:** Essa rota permite excluir um link de pagamento específico usando o seu ID.
 
-## License
+## Lógica de Negócio e Serviço
 
+<<<<<<< HEAD
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 >>>>>>> c75c94a (Set up a fresh Laravel app)
+=======
+O arquivo `LinkPagamentoService.php` contém a lógica de negócio relacionada à gestão de links de pagamento. Ele fornece funções para obter links, criar novos links e excluir links existentes.
+>>>>>>> 28a7f55 (INIT REPO)
