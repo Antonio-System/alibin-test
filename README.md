@@ -12,8 +12,7 @@
 
 ## About Alibin test by Pedro Vargas
 
-
-Breve descrição do seu projeto.
+Create by Pedro Vargas
 
 ## Instruções para Iniciar com Docker Compose
 
@@ -73,11 +72,4 @@ $  docker-compose up --build
   - `linkId`: ID do link de pagamento a ser excluído.
 - **Descrição:** Essa rota permite excluir um link de pagamento específico usando o seu ID.
 
-## Lógica de Negócio e Serviço
 
-<<<<<<< HEAD
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
->>>>>>> c75c94a (Set up a fresh Laravel app)
-=======
-O arquivo `LinkPagamentoService.php` contém a lógica de negócio relacionada à gestão de links de pagamento. Ele fornece funções para obter links, criar novos links e excluir links existentes.
->>>>>>> 28a7f55 (INIT REPO)
