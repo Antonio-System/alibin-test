@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-# alibin-test
-technical test
-=======
+
+# Alibin-test technical test
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -23,13 +22,13 @@ Siga esses passos para configurar e executar seu projeto localmente utilizando o
 1. Clone o repositório:
     
 ``` bash
-$  git clone <URL do repositório>
+$  git clone https://github.com/Antonio-System/test-alibin.git
 ```
  
   
 2. Navegue até o diretório do projeto:
 ``` bash
-$  cd nome-do-projeto
+$  cd test-alibin
 ```
 3. Copie o arquivo de configuração .env.example e crie um arquivo .env:
 
